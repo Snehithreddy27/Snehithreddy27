@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Snehith Reddy Jaggari | Data Analyst</title>
-    <style>
-        /* ===== GLOBAL DARK THEME ===== */
+<meta charset="UTF-8">
+<title>Snehith Reddy Jaggari | Data Analyst</title>
+
+<style>
+/* ===== GLOBAL ===== */
 body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
   background: #020617;
   color: #e5e7eb;
 }
-.section {
-  margin: 80px auto;
-}
-/* ===== HERO FIX ===== */
 
+a {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== HERO ===== */
 .hero {
   background: #0f172a;
   padding: 80px 20px;
@@ -26,55 +35,81 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 60px;
+  flex-wrap: wrap;
 }
 
-/* LEFT TEXT */
 .hero-text {
   flex: 1;
 }
 
+.hero-text h4 {
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
 .hero-text h1 {
   font-size: 48px;
+  margin: 0;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  margin: 10px 0;
 }
 
 .hero-text h2 span {
   color: #22d3ee;
 }
 
-/* RIGHT IMAGE */
+.hero-text p {
+  max-width: 520px;
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #22d3ee;
+  color: #020617;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
 .hero-image {
-  flex-shrink: 0;          /* IMPORTANT */
+  flex-shrink: 0;
 }
 
 .hero-image img {
-  width: 260px;            /* FIXED SIZE */
+  width: 260px;
   height: 260px;
   object-fit: cover;
   border-radius: 20px;
   border: 4px solid #22d3ee;
 }
 
+/* ===== SECTIONS ===== */
 .section {
   max-width: 1100px;
-  margin: 60px auto;
+  margin: 80px auto;
   padding: 40px;
   background: #0f172a;
   border-radius: 20px;
-  box-shadow: 0 0 30px rgba(34, 211, 238, 0.05);
 }
 
 .section h2 {
+  color: #22d3ee;
   font-size: 32px;
   margin-bottom: 20px;
-  color: #22d3ee;
 }
 
 .section p {
+  max-width: 800px;
   line-height: 1.8;
   color: #cbd5f5;
 }
 
-/* Lists */
 .section ul {
   list-style: none;
   padding-left: 0;
@@ -82,19 +117,13 @@ body {
 
 .section ul li {
   margin-bottom: 10px;
-  color: #cbd5f5;
 }
 
-/* Sub-headings */
-.sub {
-  color: #94a3b8;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
+/* ===== SKILLS ===== */
 .skill-group span {
   display: inline-block;
   background: #020617;
-  border: 1px solid rgba(34, 211, 238, 0.25);
+  border: 1px solid rgba(34,211,238,0.25);
   padding: 8px 14px;
   border-radius: 20px;
   margin: 6px;
@@ -102,45 +131,48 @@ body {
   color: #cbd5f5;
 }
 
-/* Project cards */
+/* ===== PROJECTS ===== */
 .project-card {
   background: #020617;
   padding: 25px;
   border-radius: 16px;
   margin-bottom: 20px;
-  border: 1px solid rgba(34, 211, 238, 0.15);
-}
-
-.project-card a {
-  color: #22d3ee;
-  text-decoration: none;
-  font-weight: 500;
-}
-.project-card h3 {
-  color: #22d3ee;
-  margin-bottom: 5px;
-}
-
-.project-card {
+  border: 1px solid rgba(34,211,238,0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0 25px rgba(34, 211, 238, 0.15);
+  box-shadow: 0 0 25px rgba(34,211,238,0.15);
 }
 
-.project-card a:hover {
-  text-decoration: underline;
+.project-card h3 {
+  color: #22d3ee;
+  margin-bottom: 5px;
 }
-    </style>
+
+.sub {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+</style>
 </head>
+
 <body>
 
+<!-- HERO -->
 <header class="hero">
   <div class="hero-container">
 
-    <!-- LEFT CONTENT -->
     <div class="hero-text">
       <h4>Hello, it's Me</h4>
       <h1>Snehith Reddy Jaggari</h1>
@@ -156,7 +188,6 @@ body {
       </a>
     </div>
 
-    <!-- RIGHT IMAGE -->
     <div class="hero-image">
       <img src="profile.jpg" alt="Snehith Reddy Jaggari">
     </div>
@@ -164,29 +195,20 @@ body {
   </div>
 </header>
 
-
-
-
-<div class="container">
-
+<!-- ABOUT -->
 <div class="section" id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a Data Analyst skilled in turning messy datasets into clean, structured,
-        and insightful information. I have hands-on experience with SQL, Python
-        (Pandas/NumPy), Excel, and Power BI, along with strong exposure to data
-        validation, data modeling, and KPI reporting.
-        I have worked on ESG, financial, healthcare, and cloud monitoring datasets,
-        collaborating with cross-functional teams to translate business problems
-        into actionable insights. I am comfortable using AI tools like ChatGPT and
-        Copilot to speed up analysis and automate workflows.
-    </p>
+  <h2>About Me</h2>
+  <p>
+    I am a Data Analyst skilled in turning messy datasets into clean, structured,
+    and insightful information. I have hands-on experience with SQL, Python
+    (Pandas/NumPy), Excel, and Power BI, along with strong exposure to data validation,
+    data modeling, and KPI reporting.
+  </p>
 </div>
 
-
+<!-- SKILLS -->
 <div class="section" id="skills">
   <h2>Skills</h2>
-
   <div class="skill-group">
     <span>SQL</span>
     <span>Python (Pandas, NumPy)</span>
@@ -202,8 +224,7 @@ body {
   </div>
 </div>
 
-
-
+<!-- PROJECTS -->
 <div class="section" id="projects">
   <h2>Projects</h2>
 
@@ -211,9 +232,8 @@ body {
     <h3>AWS Infrastructure Monitoring & Intelligent Clustering</h3>
     <p class="sub">UMBC | 2025</p>
     <p>
-      Processed and validated 10,000+ AWS CloudWatch metrics and performed time-series
-      EDA to detect anomalies. Built clustering models using KMeans and DBSCAN and
-      created dashboards to summarize system health.
+      Processed and validated 10,000+ AWS CloudWatch metrics and built clustering
+      models using KMeans and DBSCAN to detect anomalies.
     </p>
     <a href="https://github.com/Snehithreddy27/AWS-Cloud-Anamoly-Detection" target="_blank">
       🔗 View Project on GitHub
@@ -221,25 +241,16 @@ body {
   </div>
 
   <div class="project-card">
-    <h3>ESG Performance Analysis & Financial Data Insights</h3>
+    <h3>ESG Performance Analysis & Financial Insights</h3>
     <p class="sub">UMBC | 2024</p>
     <p>
-      Cleaned and standardized ESG and financial datasets. Built ESG scoring indicators
-      and Power BI dashboards to analyze emissions, governance metrics, revenue trends,
-      and risk patterns.
-    </p>
-  </div>
-
-  <div class="project-card">
-    <h3>Healthcare Readmission Prediction</h3>
-    <p>
-      Built machine learning models to predict hospital readmission risk using healthcare
-      data with a focus on preprocessing, feature engineering, and evaluation.
+      Cleaned ESG and financial datasets and built Power BI dashboards
+      to analyze risk and performance.
     </p>
   </div>
 </div>
 
-</div>
+<!-- EXPERIENCE -->
 <div class="section" id="experience">
   <h2>Experience</h2>
 
@@ -247,55 +258,41 @@ body {
   <p class="sub">Hyderabad, India | Feb 2023 – Jun 2023</p>
 
   <ul>
-    <li>Developed understanding of data flows in IoT systems and real-time processing.</li>
-    <li>Strengthened analytical and troubleshooting skills in a professional environment.</li>
-    <li>Assisted in validating data behaviors and documenting system processes.</li>
-    <li>Improved communication and collaboration with engineering teams.</li>
+    <li>Worked on data flows in IoT and real-time systems.</li>
+    <li>Assisted in validating data behavior and documentation.</li>
+    <li>Improved collaboration with engineering teams.</li>
   </ul>
 </div>
 
+<!-- EDUCATION -->
 <div class="section" id="education">
   <h2>Education</h2>
 
   <h3>University of Maryland, Baltimore County – USA</h3>
-  <p class="sub">Master of Professional Studies (Data Science) | GPA: 3.8 / 4</p>
+  <p class="sub">MPS in Data Science | GPA: 3.8 / 4</p>
   <p>2023 – 2025</p>
 
   <br>
 
   <h3>Gokaraju Rangaraju Institute of Engineering and Technology</h3>
-  <p class="sub">Bachelor of Technology (Computer Science) | CGPA: 8.7</p>
+  <p class="sub">B.Tech Computer Science | CGPA: 8.7</p>
   <p>2019 – 2023</p>
 </div>
 
-
+<!-- CONTACT -->
 <div class="section" id="contact">
   <h2>Contact</h2>
-
-  <p>
-    📞 <a href="tel:+916304954447">+91 63049 54447</a>
-  </p>
-  <p>
-    ✉️ <a href="mailto:snehith2730@gmail.com">snehith2730@gmail.com</a>
-  </p>
+  <p>📞 <a href="tel:+916304954447">+91 63049 54447</a></p>
+  <p>✉️ <a href="mailto:snehith2730@gmail.com">snehith2730@gmail.com</a></p>
   <p>📍 Hyderabad, India</p>
-
-  <div style="margin-top:15px;">
-    <a href="https://github.com/Snehithreddy27" target="_blank" class="btn">
-      GitHub
-    </a>
-    <a href="https://www.linkedin.com/" target="_blank" class="btn">
-      LinkedIn
-    </a>
-  </div>
-</div>
-
-
-
+  <p>
+    <a href="https://github.com/Snehithreddy27" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+  </p>
 </div>
 
 <footer>
-    © 2025 Snehith Reddy | Data Portfolio
+  © 2025 Snehith Reddy Jaggari · Data Analyst Portfolio
 </footer>
 
 </body>
