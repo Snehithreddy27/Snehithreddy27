@@ -12,6 +12,47 @@ body {
 .section {
   margin: 80px auto;
 }
+/* ===== HERO FIX ===== */
+
+.hero {
+  background: #0f172a;
+  padding: 80px 20px;
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT TEXT */
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+}
+
+.hero-text h2 span {
+  color: #22d3ee;
+}
+
+/* RIGHT IMAGE */
+.hero-image {
+  flex-shrink: 0;          /* IMPORTANT */
+}
+
+.hero-image img {
+  width: 260px;            /* FIXED SIZE */
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 4px solid #22d3ee;
+}
 
 .section {
   max-width: 1100px;
