@@ -1,6 +1,6 @@
-## Hi there 
+# Hello, it's Me 
 
-# Hi, I'm Snehith Reddy Jaggari
+#  Snehith Reddy Jaggari
 
  **Data Analyst | Data Science Graduate**
 
