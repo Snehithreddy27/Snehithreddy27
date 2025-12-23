@@ -25,7 +25,7 @@ a:hover {
 /* ===== HERO ===== */
 .hero {
   background: #0f172a;
-  padding: 80px 20px;
+  padding: 60px 20px 40px;
 }
 
 .hero-container {
@@ -34,7 +34,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
@@ -53,7 +53,7 @@ a:hover {
 }
 
 .hero-text h2 {
-  font-size: 28px;
+  font-size: 26px;
   margin: 10px 0;
 }
 
@@ -69,7 +69,7 @@ a:hover {
 
 .btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 18px;
   background: #22d3ee;
   color: #020617;
   padding: 12px 22px;
@@ -82,33 +82,26 @@ a:hover {
 }
 
 .hero-image img {
-  width: 260px;
-  height: 260px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   border-radius: 20px;
   border: 4px solid #22d3ee;
 }
 
-
 /* ===== SECTIONS ===== */
 .section {
   max-width: 1100px;
-  margin: 50px auto;   /* reduced */
-  padding: 40px;
+  margin: 40px auto;
+  padding: 32px;
   background: #0f172a;
-  border-radius: 20px;
+  border-radius: 18px;
 }
-.section-divider {
-  max-width: 1100px;
-  margin: 60px auto 40px auto;  /* reduced */
-  border-top: 1px solid rgba(34, 211, 238, 0.2);
-}
-
 
 .section h2 {
   color: #22d3ee;
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 16px;
 }
 
 .section p {
@@ -118,11 +111,17 @@ a:hover {
 }
 
 .section ul {
-  list-style: none;
-  padding-left: 0;
+  list-style: disc;
+  padding-left: 20px;
 }
 
 .section ul li {
+  margin-bottom: 8px;
+}
+
+.sub {
+  color: #94a3b8;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 
@@ -141,7 +140,7 @@ a:hover {
 /* ===== PROJECTS ===== */
 .project-card {
   background: #020617;
-  padding: 25px;
+  padding: 22px;
   border-radius: 16px;
   margin-bottom: 20px;
   border: 1px solid rgba(34,211,238,0.15);
@@ -149,25 +148,19 @@ a:hover {
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 25px rgba(34,211,238,0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(34,211,238,0.15);
 }
 
 .project-card h3 {
   color: #22d3ee;
-  margin-bottom: 5px;
-}
-
-.sub {
-  color: #94a3b8;
-  font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 /* ===== FOOTER ===== */
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 26px;
   color: #94a3b8;
   font-size: 14px;
 }
@@ -183,12 +176,12 @@ footer {
     <div class="hero-text">
       <h4>Hello, it's Me</h4>
       <h1>Snehith Reddy Jaggari</h1>
-      <h2>And I'm a <span>Data Analyst|Data Engineer</span></h2>
+      <h2>And I'm a <span>Data Analyst | Data Engineer</span></h2>
 
       <p>
-        Data Science Graduate from UMBC with strong skills in SQL, Python, Power BI, and cloud-based
-        data analysis. Passionate about turning raw data into meaningful insights and actively
-        seeking full-time opportunities.
+        Data Science Graduate from UMBC with strong skills in SQL, Python, Power BI, and
+        cloud-based data analysis. Passionate about turning raw data into meaningful
+        insights and actively seeking full-time opportunities.
       </p>
 
       <a href="SNEHITHREDDY_RESUME_.pdf" target="_blank" class="btn">
@@ -207,54 +200,25 @@ footer {
 <div class="section" id="about">
   <h2>About Me</h2>
   <p>
-   Data Engineer and Analyst with an MPS in Data Science, experienced in building ETL pipelines, data warehouses, and cloud-based
-data solutions. Skilled in SQL, Python, dbt, and AWS, with expertise in transforming raw data into actionable insights
-through dashboards and analytics to support data-driven decisions.
+    Data Engineer and Analyst with an MPS in Data Science, experienced in building ETL
+    pipelines, data warehouses, and cloud-based data solutions. Skilled in SQL, Python,
+    AWS, and analytics to support data-driven decision-making.
   </p>
 </div>
 
+<!-- SKILLS -->
 <div class="section" id="skills">
   <h2>Skills</h2>
-
   <div class="skill-group">
-    <!-- Data Engineering -->
-    <span>SQL</span>
-    <span>ETL Pipelines</span>
-    <span>Data Warehousing</span>
-    <span>Data Modeling</span>
-    <span>Distributed Systems</span>
-
-    <!-- Programming -->
-    <span>Python</span>
-    <span>Java</span>
-
-    <!-- Cloud -->
-    <span>AWS</span>
-
-    <!-- Analytics & BI -->
-    <span>Power BI</span>
-    <span>Tableau</span>
-    <span>Excel</span>
-    <span>EDA</span>
-    <span>KPI Dashboards</span>
-    <span>Business Intelligence</span>
-    <span>Data-Driven Insights</span>
-
-    <!-- Statistics -->
-    <span>Descriptive Statistics</span>
-    <span>Inferential Statistics</span>
-    <span>Hypothesis Testing</span>
-
-    <!-- Databases -->
-    <span>NoSQL</span>
-
-    <!-- Methodologies -->
-    <span>Agile</span>
-    <span>Scrum</span>
-    <span>Project Management</span>
+    <span>SQL</span><span>ETL Pipelines</span><span>Data Warehousing</span>
+    <span>Data Modeling</span><span>Distributed Systems</span>
+    <span>Python</span><span>Java</span><span>AWS</span>
+    <span>Power BI</span><span>Tableau</span><span>Excel</span>
+    <span>EDA</span><span>KPI Dashboards</span>
+    <span>Statistics</span><span>NoSQL</span>
+    <span>Agile</span><span>Scrum</span><span>Project Management</span>
   </div>
 </div>
-
 
 <!-- PROJECTS -->
 <div class="section" id="projects">
@@ -264,52 +228,48 @@ through dashboards and analytics to support data-driven decisions.
     <h3>AWS Infrastructure Monitoring & Intelligent Clustering</h3>
     <p class="sub">UMBC | 2025</p>
     <p>
-      Processed and validated 10,000+ AWS CloudWatch metrics and built clustering
-      models using KMeans and DBSCAN to detect anomalies.
+      Processed and validated 10,000+ AWS CloudWatch metrics and applied clustering
+      techniques (KMeans, DBSCAN) to identify anomalies and usage patterns.
     </p>
     <a href="https://github.com/Snehithreddy27/AWS-Cloud-Anamoly-Detection" target="_blank">
       🔗 View Project on GitHub
     </a>
   </div>
 
-<div class="project-card">
-  <h3>ESG Performance Analysis & Financial Data Insights</h3>
-  <p class="sub">UMBC | 2024</p>
-  <p>
-    Analyzed ESG and financial data using Python to evaluate corporate sustainability and long-term stability. Built composite ESG scores, 
-    classified companies by risk levels, and identified that lower ESG risk is associated with stronger revenue and business stability.
-  </p>
-  <a href="https://github.com/Snehithreddy27/ESG-Performance-Analysis" target="_blank">
-    🔗 View Project on GitHub
-  </a>
+  <div class="project-card">
+    <h3>ESG Performance Analysis & Financial Data Insights</h3>
+    <p class="sub">UMBC | 2024</p>
+    <p>
+      Analyzed ESG and financial data using Python to assess sustainability risk,
+      build ESG scores, and identify correlations between ESG risk and revenue stability.
+    </p>
+    <a href="https://github.com/Snehithreddy27/ESG-Performance-Analysis" target="_blank">
+      🔗 View Project on GitHub
+    </a>
+  </div>
 </div>
 
-
+<!-- EXPERIENCE -->
 <div class="section" id="experience">
   <h2>Experience</h2>
-
   <h3>Cognizant Technology Solutions – IoT Java Intern</h3>
   <p class="sub">Hyderabad, India | Feb 2023 – Jun 2023</p>
-
   <ul>
-    <li>• Built foundational knowledge of IoT systems and Java programming.</li>
-    <li>• Enhanced problem-solving and communication skills.</li>
-    <li>• Gained exposure to real-world industry workflows and teamwork.</li>
+    <li>Built foundational knowledge of IoT systems and Java programming.</li>
+    <li>Enhanced problem-solving and communication skills.</li>
+    <li>Gained exposure to real-world industry workflows and teamwork.</li>
   </ul>
 </div>
 
-
+<!-- EDUCATION -->
 <div class="section" id="education">
   <h2>Education</h2>
-
   <h3>University of Maryland, Baltimore County – USA</h3>
-  <p class="sub">Master of Professional Studies – Data Science | GPA: 3.8 / 4</p>
+  <p class="sub">MPS in Data Science | GPA: 3.8 / 4</p>
   <p>2023 – 2025</p>
 
-  <br>
-
   <h3>Gokaraju Rangaraju Institute of Engineering and Technology</h3>
-  <p class="sub">Bachelor of Technology – Computer Science | CGPA: 8.7</p>
+  <p class="sub">B.Tech in Computer Science | CGPA: 8.7</p>
   <p>2019 – 2023</p>
 </div>
 
